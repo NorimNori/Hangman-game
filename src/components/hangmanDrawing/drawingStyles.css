@@ -1,0 +1,121 @@
+.drawing_container{
+    display: flex;
+    align-items: flex-start;
+    border: 10px solid black ;
+    padding: 20px 100px 20px 20px;
+}
+.gallow_container{
+    position: relative;
+}
+.black{
+    background: black;
+    border-radius: 30px;
+}
+#part_one{
+    height: 50px;
+    width: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#part_two{
+    height: 10px;
+    width: 200px;
+    margin-left: 120px;
+}
+#part_three{
+    height: 400px;
+    width: 10px;
+    margin-left: 120px;
+}
+#part_four{
+    height: 10px;
+    width: 250px;
+}
+#part_five{
+    height: 65px;
+    width: 10px;
+    margin-left: 120px;
+    position: absolute;
+    top: 0px;
+    left: 29px;
+    rotate: 45deg;
+}
+#head{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 10px solid black;
+    position: absolute;
+    top: 50px;
+    right: -30px;
+
+}
+#body{
+    width: 10px;
+    height: 100px;
+    background: black;
+    position: absolute;
+    top: 120px;
+    right: 0;
+}
+#right_arm{
+    width: 100px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 150px;
+    right: -100px;
+    rotate: -30deg;
+    transform-origin: left bottom;
+}
+#left_arm{
+    width: 100px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 150px;
+    right: 10px;
+    rotate: 30deg;
+    transform-origin: right bottom
+}
+#right_leg{
+    width: 100px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 210px;
+    right: -90px;
+    rotate: 60deg;
+    transform-origin: left bottom;
+}
+#left_leg{
+    width: 100px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 210px;
+    right: 0;
+    rotate: -60deg;
+    transform-origin: right bottom;
+}
+#right_foot{
+    width: 30px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 297px;
+    right:-70px;
+    rotate: -30deg;
+    transform-origin: left bottom
+}
+#left_foot{
+    width: 30px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 297px;
+    right:50px;
+    rotate: 30deg;
+    transform-origin: right bottom
+}
