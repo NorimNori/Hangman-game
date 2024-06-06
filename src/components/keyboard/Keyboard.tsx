@@ -1,12 +1,6 @@
+import { keyboardProps } from '../../types';
 import { KEYS } from '../../constants'
 import './keyboard_styles.css'
-
-type keyboardProps = {
-    disabled?: boolean
-    activeLetters: string[]
-    inactiveLetters: string[]
-    addGuessedLetter: (letter: string) => void
-}
 
 export function Keyboard ({
     activeLetters,

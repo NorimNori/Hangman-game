@@ -1,14 +1,11 @@
-import './drawingStyles.css'
+import { HangmanDrawingProps } from '../../types';
 import { BODY_PARTS } from '../../constants'
-
-type HangmanDrawingProps = {
-    numberOfGuesses: number
-}
+import './drawingStyles.css'
 
 export function HangmanDrawing ({ numberOfGuesses }:HangmanDrawingProps) {
     return (  
         <section className="drawing_container">
-            <div className='gallow_container'>
+            <div className='gallow_container' >
                 {BODY_PARTS.slice(0, numberOfGuesses)}
                 <div className='black' id='part_one'/>
                 <div className='black' id='part_two'/>
