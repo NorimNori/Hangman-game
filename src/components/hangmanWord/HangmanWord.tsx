@@ -1,11 +1,14 @@
 import './hangWord_styles.css'
 
-export function HangmanWord () {
-    const word = 'GUITAR'
-    const guessedLetters = ['U', 'R', 'T']
+type HangmanWordProps = {
+    guessedLetters: string[]
+    wordToGuess: string
+}
+
+export function HangmanWord ({ guessedLetters, wordToGuess }: HangmanWordProps) {
     return (  
         <>
-            <div id="hang_word">{word.split("").map((letter, index) => (
+            <div id="hang_word">{wordToGuess.split("").map((letter, index) => (
                 <span 
                     id='word_cont'
                     key={index}

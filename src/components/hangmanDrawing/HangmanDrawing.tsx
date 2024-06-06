@@ -1,18 +1,15 @@
 import './drawingStyles.css'
-import { HEAD, BODY, RIGHT_LEG, RIGHT_ARM, LEFT_ARM, LEFT_LEG, LEFT_FOOT, RIGHT_FOOT } from '../../constants'
+import { BODY_PARTS } from '../../constants'
 
-export function HangmanDrawing () {
+type HangmanDrawingProps = {
+    numberOfGuesses: number
+}
+
+export function HangmanDrawing ({ numberOfGuesses }:HangmanDrawingProps) {
     return (  
         <section className="drawing_container">
             <div className='gallow_container'>
-                {HEAD}
-                {BODY}
-                {RIGHT_ARM}
-                {RIGHT_LEG}
-                {LEFT_ARM}
-                {LEFT_LEG}
-                {RIGHT_FOOT}
-                {LEFT_FOOT}
+                {BODY_PARTS.slice(0, numberOfGuesses)}
                 <div className='black' id='part_one'/>
                 <div className='black' id='part_two'/>
                 <div className='black' id='part_three'/>

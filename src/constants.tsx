@@ -1,29 +1,70 @@
-export const HEAD = (
+const HEAD = (
     <div id="head"/>
 )
   
-export const BODY = (
+const BODY = (
     <div id="body"/>
 )
   
-export const RIGHT_ARM = (
+const RIGHT_ARM = (
     <div id="right_arm"/>
 )
   
-export const LEFT_ARM = (
+const LEFT_ARM = (
     <div id="left_arm"/>
 )
   
-export const RIGHT_LEG = (
+const RIGHT_LEG = (
     <div id="right_leg"/>
 )
   
-export const LEFT_LEG = (
+const LEFT_LEG = (
     <div id="left_leg"/>
 )
-export const RIGHT_FOOT = (
+const RIGHT_FOOT = (
     <div id="right_foot"/>
 )
-export const LEFT_FOOT = (
+const LEFT_FOOT = (
     <div id="left_foot"/>
 )
+
+export const KEYS = [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "ñ",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+]
+
+export const BODY_PARTS = [
+    HEAD,
+    BODY,
+    RIGHT_ARM,
+    LEFT_ARM,
+    RIGHT_LEG, 
+    LEFT_LEG,
+    RIGHT_FOOT,
+    LEFT_FOOT
+]

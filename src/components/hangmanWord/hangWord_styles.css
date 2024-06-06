@@ -1,12 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
-
 #hang_word{
     display: flex;
     gap: 0.25em;
     font-size: 5rem;
     font-weight: bold;
-    text-transform: uppercase;
-    font-family: Caveat;
 }
 #word_cont{
     border-bottom: 0.1em solid black;
