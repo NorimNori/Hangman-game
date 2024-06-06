@@ -8,9 +8,12 @@
     border-bottom: 0.1em solid black;
     letter-spacing: 0.2em;
 }
-#visible{
+.visible{
     visibility: visible;
 }
-#hidden{
+.hidden{
     visibility: hidden;
+}
+.loss{
+    color: red;
 }

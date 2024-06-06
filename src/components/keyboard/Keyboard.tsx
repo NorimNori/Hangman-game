@@ -2,6 +2,7 @@ import { KEYS } from '../../constants'
 import './keyboard_styles.css'
 
 type keyboardProps = {
+    disabled?: boolean
     activeLetters: string[]
     inactiveLetters: string[]
     addGuessedLetter: (letter: string) => void
@@ -9,6 +10,7 @@ type keyboardProps = {
 
 export function Keyboard ({
     activeLetters,
+    disabled = false,
     inactiveLetters,
     addGuessedLetter
 }: keyboardProps) {
@@ -22,7 +24,7 @@ export function Keyboard ({
                         <button 
                             onClick={() => addGuessedLetter(key)} 
                             className={`${'btn'} ${isActive ? 'active' : '' } ${isInActive ? 'inactive' : ''}`}
-                            disabled={isInActive || isActive}
+                            disabled={isInActive || isActive || disabled}
                             key={key}
                         >
                             {key}
