@@ -65,11 +65,13 @@ function App() {
         <>
             <section id='hangdw_cont'>
                 <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
-                <div className='modal'>
-                    {isWinner && 'Winner! - Refresh to start again'}
-                    {isLoser && 'Nice Try! - Refresh to try again'}
-                </div>
-                <HangmanWord reveal={isLoser} guessedLetters={guessedLetters} wordToGuess={wordToGuess}/>
+                <aside>
+                    <div className='modal'>
+                        {isWinner && 'Winner! - Refresh to start again'}
+                        {isLoser && 'Nice Try! - Refresh to try again'}
+                    </div>
+                    <HangmanWord reveal={isLoser} guessedLetters={guessedLetters} wordToGuess={wordToGuess}/>
+                </aside>
             </section>
             < section id='hangk_cont'>
                 <Keyboard 
